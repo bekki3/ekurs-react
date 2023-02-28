@@ -1,0 +1,62 @@
+#header{
+    background:rgb(255, 255, 255);
+    height: 36vw;
+    position: relative;
+}
+#intro iframe{
+    position:absolute;
+    top: 0%;
+    left: 4%;
+    width: 43%;
+    height: 65%;
+    border-radius: 6px;
+}
+#laptopImg{
+    width: 45%;
+    transition: 0.3s;
+    right: 10%;
+    top: 20%;
+    position: absolute;
+    z-index: 1;
+}
+#laptopImg:hover{
+    width: 48%;
+}
+#cssIcon{
+    top: 8%;
+    right: 31%;
+    width: 10%;
+    position: absolute;
+    transition: 0.2s;
+}
+#cssIcon:hover{
+    width: 11%;
+}
+#htmlIcon{
+    position: absolute;
+    width: 11%;
+    right: 3%;
+    bottom: 4%;
+    transition: 0.2s;
+}
+#htmlIcon:hover{
+    width: 12%;
+}
+#jsIcon{
+    width: 11%;
+    position: absolute;
+    right: 6%;
+    top: 8%;
+    transition: 0.3s;
+}
+#jsIcon:hover{
+    width: 12%;
+}
+#textImg{
+    font-size: 3vw;
+    position: absolute;
+    left: 4%;
+    width: 50%;
+    bottom: 3%;
+    font-family: 'Montserrat', sans-serif;
+}

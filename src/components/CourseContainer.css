@@ -1,0 +1,61 @@
+body{
+    margin: 0%;
+    background-color: #14213D;
+}
+#folderContainer{
+    padding: 70px 0px;
+    font-size: 3vw;
+    font-weight: 700;
+    transition: 0.3s;
+    width: 96%;
+    margin: auto;
+    background:#14213D;
+    background-size:cover;
+}
+#folderContainer a{
+    text-decoration: none;
+    color: white;
+}
+.folder{
+    float: left;
+    border-radius: 20px;
+    width: 19%;
+    height: 26vw;
+    margin:  1% 3%;
+    padding: 4%;
+    text-align: center;
+    transition: 0.3s;
+}
+.folder:hover{
+    padding: 4% 5%;
+    margin:  1% 2%;
+    margin-left: 2%;
+}
+.folder p{
+    width: fit-content;
+}
+.folder img{
+    float: center;
+    width: 60%;
+}
+/* #htmlFolder{
+    background-image: url(images/HTML.png);
+    background-size: cover;
+}
+#cssFolder{
+    background-image: url(images/CSS.png);
+    background-size: cover;
+}
+#jsFolder{
+    background-image: url(images/JS.png);
+    background-size: cover;
+    background-position: center;
+}
+#goFolder{
+    text-align: center;
+    background-image: url(images/GO.png);
+    background-size: contain;
+    background-position: center;
+    border: 2px solid #00ffff;
+    color: rgb(75, 75, 75);
+} */
