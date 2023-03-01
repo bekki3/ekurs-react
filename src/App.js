@@ -5,8 +5,7 @@ import SupportPage from "./screens/SupportPage";
 import { useState } from "react";
 function App() {
   const screenChangeHandler = (str)=> {
-    console.log(str);
-    if(str=="AboutPage"){
+    if(str==="AboutPage"){
       setScreen(<AboutPage screenChangeHandler={screenChangeHandler}/>);
     }else if(str==="SupportPage"){
       setScreen(<SupportPage screenChangeHandler={screenChangeHandler}/>);
@@ -18,10 +17,6 @@ function App() {
   }
 
   const [screen, setScreen] = useState(<MainPage screenChangeHandler={screenChangeHandler}/>);
-  
-  
-
-
   return (
     <div className="App">
       {screen}

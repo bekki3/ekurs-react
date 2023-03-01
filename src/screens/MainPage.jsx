@@ -9,7 +9,13 @@ const MainPage = (props) => {
       <Header screenChangeHandler={props.screenChangeHandler}/>
       <IntroVideo />
       {Links.map((item, index)=> {
-        return <CourseContainer categoryTitle={item.categoryTitle} thumbnail={item.thumbnail}/>
+        return (
+          <CourseContainer
+            categoryTitle={item.categoryTitle}
+            thumbnail={item.thumbnail}
+            screenChangeHandler={props.screenChangeHandler}
+          />
+        );
       })}
       <Footer screenChangeHandler={props.screenChangeHandler}/>
     </div>

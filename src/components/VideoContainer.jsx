@@ -1,15 +1,16 @@
 const VideoContainer = (props) => {
     return (
-      <a href="htmlFolder.html">
+      
         <div
+        onClick={()=>{props.screenChangeHandler("CoursePage"); console.log("hsd")}}
           className="folder"
-          id="htmlFolder"
           style={{
             backgroundImage: `url(${require("../images/"+props.imgUrl)})`,
             backgroundSize: "cover",
           }}
-        ></div>
-      </a>
+        >
+        </div>
+      
     );
 }
 

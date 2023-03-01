@@ -18,13 +18,14 @@ const CoursePage = (props) => {
         <p>Koreys Tili Kursi</p>
         <div>
           {" "}
-          <a href="index.html">
+          
             <img
+            onClick={()=>{props.screenChangeHandler("MainPage"); console.log("hsd")}}
               src={require("../images/houseIcon.png")}
               alt="houseIcon"
               style={{ marginLeft: "5px" }}
             />
-          </a>
+        
         </div>
       </div>
       <br />

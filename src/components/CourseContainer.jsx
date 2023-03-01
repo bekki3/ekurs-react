@@ -14,7 +14,12 @@ const CourseContainer = (props) => {
             style={styles.categoryThumbnails}
           >
             {props.thumbnail.map((item)=> {
-              return <VideoContainer imgUrl={item}/>
+              return (
+                <VideoContainer
+                  imgUrl={item}
+                  screenChangeHandler={props.screenChangeHandler}
+                />
+              );
             })}
           </div>
         </div>
