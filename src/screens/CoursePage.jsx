@@ -16,7 +16,7 @@ const CoursePage = (props) => {
         }}
       >
         {/* <p>{props.courseTitle}</p> */}
-        <p>Koreys Tili Kursi</p>
+        <p>{props.coursePageData.courseTitle}</p>
         <div>
           {" "}
           
@@ -33,10 +33,9 @@ const CoursePage = (props) => {
       <br />
       <div style={{ textAlign: "center" }}>  
 
-        <IframeVideo videoUrl={"https://www.youtube.com/embed/duMhERlEEAg"}/>
-        <IframeVideo videoUrl={"https://www.youtube.com/embed/duMhERlEEAg"}/>
-        <IframeVideo videoUrl={"https://www.youtube.com/embed/duMhERlEEAg"}/>
-        <IframeVideo videoUrl={"https://www.youtube.com/embed/duMhERlEEAg"}/>
+      {props.coursePageData.videos.map((url)=>{return <IframeVideo videoUrl={url}/>})}
+        
+        
 
       </div>
       < Footer />

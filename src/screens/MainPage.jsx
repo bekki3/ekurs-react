@@ -11,8 +11,8 @@ const MainPage = (props) => {
       {Links.map((item, index)=> {
         return (
           <CourseContainer
-            categoryTitle={item.categoryTitle}
-            thumbnail={item.thumbnail}
+            categoryTitle={item.category}
+            course={item.course}
             screenChangeHandler={props.screenChangeHandler}
           />
         );

@@ -9,10 +9,10 @@ function App() {
       setScreen(<AboutPage screenChangeHandler={screenChangeHandler}/>);
     }else if(str==="SupportPage"){
       setScreen(<SupportPage screenChangeHandler={screenChangeHandler}/>);
-    }else if(str==="CoursePage"){
-      setScreen(<CoursePage screenChangeHandler={screenChangeHandler}/>);
     }else if(str==="MainPage"){
       setScreen(<MainPage screenChangeHandler={screenChangeHandler}/>);
+    }else{
+      setScreen(<CoursePage screenChangeHandler={screenChangeHandler} coursePageData={str}/>)
     }
   }
 

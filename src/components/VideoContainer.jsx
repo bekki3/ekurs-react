@@ -1,16 +1,19 @@
 const VideoContainer = (props) => {
+  //console.log(props.courseTitle);
     return (
-      
-        <div
-        onClick={()=>{props.screenChangeHandler("CoursePage"); console.log("hsd")}}
-          className="folder"
-          style={{
-            backgroundImage: `url(${require("../images/"+props.imgUrl)})`,
-            backgroundSize: "cover",
-          }}
-        >
-        </div>
-      
+      <div
+        onClick={() => {
+          props.screenChangeHandler({ 
+            courseTitle: props.courseTitle,
+            videos: props.videos
+          });
+        }}
+        className="folder"
+        style={{
+          backgroundImage: `url(${require("../images/" + props.imgUrl)})`,
+          backgroundSize: "cover",
+        }}
+      ></div>
     );
 }
 

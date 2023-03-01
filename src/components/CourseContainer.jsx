@@ -1,5 +1,4 @@
 import "./CourseContainer.css";
-import Links from "./Links";
 import VideoContainer from "./VideoContainer";
 const CourseContainer = (props) => {
     return (
@@ -13,10 +12,12 @@ const CourseContainer = (props) => {
           <div
             style={styles.categoryThumbnails}
           >
-            {props.thumbnail.map((item)=> {
+            {props.course.map((item)=> {
               return (
                 <VideoContainer
-                  imgUrl={item}
+                  imgUrl={item.courseThumbnail}
+                  courseTitle={item.courseTitle}
+                  videos={item.videos}
                   screenChangeHandler={props.screenChangeHandler}
                 />
               );
