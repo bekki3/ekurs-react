@@ -1,5 +1,6 @@
 import "./CoursePage.css";
 import IframeVideo from "../components/IframeVideo";
+import Footer from "../components/Footer";
 const CoursePage = (props) => {
   return (
     <div
@@ -20,7 +21,7 @@ const CoursePage = (props) => {
           {" "}
           
             <img
-            onClick={()=>{props.screenChangeHandler("MainPage"); console.log("hsd")}}
+            onClick={()=>{props.screenChangeHandler("MainPage")}}
               src={require("../images/houseIcon.png")}
               alt="houseIcon"
               style={{ marginLeft: "5px" }}
@@ -32,9 +33,13 @@ const CoursePage = (props) => {
       <br />
       <div style={{ textAlign: "center" }}>  
 
-        <IframeVideo videoUrl={"https://www.youtube.com/embed/axVVZmIj7B0?list=PLkJ2AAkSnydnmqCMS0pOrWGBzClEoEnby"}/>
+        <IframeVideo videoUrl={"https://www.youtube.com/embed/duMhERlEEAg"}/>
+        <IframeVideo videoUrl={"https://www.youtube.com/embed/duMhERlEEAg"}/>
+        <IframeVideo videoUrl={"https://www.youtube.com/embed/duMhERlEEAg"}/>
+        <IframeVideo videoUrl={"https://www.youtube.com/embed/duMhERlEEAg"}/>
 
       </div>
+      < Footer />
     </div>
   );
 };
