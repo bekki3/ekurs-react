@@ -18,7 +18,9 @@ body{
     width: 8vw;
     min-width: 80px;
 }
-.section a{
+.section a, button{
+    border: 0;
+    background:none;
     color: rgb(110, 110, 110);
     float: left;
     margin: 3px;
@@ -33,7 +35,17 @@ body{
     color: white;
     border-radius: 13px;
 }
+.section button:hover{
+    background: rgb(66, 66, 66);
+    color: white;
+    border-radius: 13px;
+}
 .section a:active{
+    background: rgb(66, 66, 66);
+    color: white;
+    border-radius: 13px;
+    opacity: 70%;
+}.section button:active{
     background: rgb(66, 66, 66);
     color: white;
     border-radius: 13px;

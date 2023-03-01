@@ -8,6 +8,7 @@
 }
 
 #media {
+    display: inline;
     width: fit-content;
     margin: auto;
     height: 36px;

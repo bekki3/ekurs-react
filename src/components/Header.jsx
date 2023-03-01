@@ -1,13 +1,13 @@
 import "./Header.css"
 
-const Header = () => {
+const Header = (props) => {
 
 
     return(<div className="section">
         <p><img src={require("../images/ekursBrand.png")} alt="ekurs icon"/></p>
-        <a href="https://t.me/eKurs" title="Yordam Olish">Yordam Olish</a>
-        <a href="malumot.html">Ma'lumot</a>
-        <a href="supportPage.html">Support</a>
+        <button onClick={()=>{window.location.href="https://t.me/eKurs"}}>Yordam Olish</button>
+        <button onClick={()=> {props.screenChangeHandler("AboutPage")}}>Ma'lumot</button>
+        <button onClick={()=> {props.screenChangeHandler("SupportPage")}}>Support</button>
     </div>);
 }
 

@@ -1,22 +1,30 @@
-import CourseContainer from "./components/CourseContainer";
-import Header from "./components/Header";
-import IntroVideo from "./components/IntroVideo";
-import Footer from "./components/Footer";
-import CoursePage from "./components/CoursePage";
-import Links from "./components/Links";
-Links.map((item, index)=> {
-  console.log(item);
-})
+import MainPage from "./screens/MainPage";
+import CoursePage from "./screens/CoursePage";
+import AboutPage from "./screens/AboutPage";
+import SupportPage from "./screens/SupportPage";
+import { useState } from "react";
 function App() {
+  const screenChangeHandler = (str)=> {
+    console.log(str);
+    if(str=="AboutPage"){
+      setScreen(<AboutPage screenChangeHandler={screenChangeHandler}/>);
+    }else if(str==="SupportPage"){
+      setScreen(<SupportPage screenChangeHandler={screenChangeHandler}/>);
+    }else if(str==="CoursePage"){
+      setScreen(<CoursePage screenChangeHandler={screenChangeHandler}/>);
+    }else if(str==="MainPage"){
+      setScreen(<MainPage screenChangeHandler={screenChangeHandler}/>);
+    }
+  }
+
+  const [screen, setScreen] = useState(<MainPage screenChangeHandler={screenChangeHandler}/>);
+  
+  
+
+
   return (
     <div className="App">
-      <Header />
-      <IntroVideo />
-      {Links.map((item, index)=> {
-        return <CourseContainer categoryTitle={item.categoryTitle} thumbnail={item.thumbnail}/>
-      })}
-      <Footer />
-      <CoursePage />
+      {screen}
     </div>
   );
 }
